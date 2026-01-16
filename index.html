@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kasthebarber | Liverpool Barber</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+p {
+  opacity: 0.9;
+  max-width: 700px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #cfa44a;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+  url("hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services div {
+  background: #151515;
+  padding: 25px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.gallery div {
+  height: 220px;
+  background: #222;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+/* FLOATING BUTTON */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #cfa44a;
+  color: #000;
+  padding: 15px 25px;
+  font-weight: bold;
+  border-radius: 50px;
+  z-index: 999;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <section>
+    <h1>KASTHEBARBER</h1>
+    <p>Precision Fades • Liverpool</p>
+    <a class="btn" href="#booking">Book Appointment</a>
+  </section>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <h2>About</h2>
+  <p>
+    Liverpool based barber specialising in clean fades and modern grooming.
+    Quality, consistency and attention to detail.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Services</h2>
+  <div>Skin Fade – £25</div>
+  <div>Fade & Beard – £30</div>
+  <div>Beard Trim – £15</div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Work</h2>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <h2>Book With Squire</h2>
+  <p>Tap below to secure your appointment</p>
+  <a class="btn" href="https://getsquire.com/YOUR-LINK">Book Now</a>
+</section>
+
+<!-- FLOATING BOOK BUTTON -->
+<a class="floating-btn" href="https://getsquire.com/YOUR-LINK">
+  BOOK NOW
+</a>
+
+</body>
+</html>
