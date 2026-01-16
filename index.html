@@ -44,15 +44,41 @@ p {
   margin-top: 20px;
 }
 
+/* HERO SECTION WITH LOGO FADE-IN */
 .hero {
   height: 100vh;
-  background: 
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("logo.png") center/contain no-repeat;
-  background-color: #0b0b0b;  /* fallback dark color */
+  background-color: #0b0b0b;  /* fallback dark background */
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("logo.png") center/contain no-repeat;
+  opacity: 0;               /* start transparent */
+  animation: fadeInLogo 2s forwards;  /* fade in over 2 seconds */
+  z-index: 0;
+}
+
+.hero section {
+  position: relative;       /* keep text above the logo */
+  z-index: 1;
+  text-align: center;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeInLogo {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .services div {
